@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p, form, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html，body{
+    height: 100%;
+    font-size: 14px;
+}
+/*界面背景渐变色*/
+body{
+    background-color:#8DCDFF ;
+    /*background: -webkit-linear-gradient(#8DCDFF, #64B4FA); /!* Safari *!/*/
+    /*background: -o-linear-gradient(#8DCDFF, #64B4FA); /!* Opera *!/*/
+    /*background: -moz-linear-gradient(#8DCDFF, #64B4FA); /!* Firefox *!/*/
+    /*background: linear-gradient(#8DCDFF, #64B4FA); /!* 标准的语法 *!/*/
+}
+/*标题栏样式开始*/
+header{
+    width: 100%;
+    height: 67px;
+    background-color: #0094E0;
+}
+header h2{
+    color: #fff;
+    line-height: 67px;
+    text-align: center;
+}
+/*标题栏样式结束*/
+/*修改placeholder颜色*/
+
+/*内容部分开始*/
+.content-total{
+    width: 100%;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+}
+.content{
+    margin-top: 52px;
+}
+/*左侧表单部分开始*/
+/*表单1*/
+.ct1{
+    width: 250px;
+    height: 161px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #525252;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    /*盒子阴影*/
+    -webkit-box-shadow:9px 9px 0 rgba(255, 255, 255, .36);
+    -moz-box-shadow:9px 9px 0 rgba(255, 255, 255, .36);
+    box-shadow:9px 9px 0 rgba(255, 255, 255, .36);
+}
+.dropdown-toggle{
+    width: 160px;
+    height: 28px;
+    border-radius: 20px;
+    border-color:#3179BA ;
+    line-height: 16px;
+}
+/*表单2*/
+.ct2{
+    width: 250px;
+    height: 173px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #525252;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    /*盒子阴影*/
+    -webkit-box-shadow:9px 9px 0 rgba(255, 255, 255, .36);
+    -moz-box-shadow:9px 9px 0 rgba(255, 255, 255, .36);
+    box-shadow:9px 9px 0 rgba(255, 255, 255, .36);
+}
+.ct2>div{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+}
+.ct2>p{
+    width: 88%;
+}
+.ct2>p>span{
+    margin-left: 34px;
+}
+.date{
+    width: 150px;
+}
+.date>input{
+    border-radius: 20px;
+    border-color: #3179BA;
+    border-right:none ;
+}
+.datetimepicker td{
+    height: 30px !important;
+    width: 50px !important;
+}
+/*更改组件默认样式*/
+/*内容详情表单格式*/
+.datetimepicker td{
+    height: 30px !important;
+    width: 50px !important;
+}
+/*时间选择器表单格式*/
+.fudai-main tr{
+    height: 60px !important;
+}
+.date>.input-group-addon{
+    border-radius:0 20px 20px 0;
+    border-color: #3179BA;
+    background-color: transparent;
+    cursor: pointer;
+}
+/*表单3*/
+.ct3{
+    width: 250px;
+    height: 228px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #525252;
+    overflow: hidden;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:center;
+    /*盒子阴影*/
+    -webkit-box-shadow:9px 9px 0 rgba(255, 255, 255, .36);
+    -moz-box-shadow:9px 9px 0 rgba(255, 255, 255, .36);
+    box-shadow:9px 9px 0 rgba(255, 255, 255, .36);
+}
+.ct3_tabBtn{
+    height: 34px;
+    width: 100%;
+    /*position: relative;*/
+    /*top: 0;*/
+}
+.ct3_tabBtn>div{
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+}
+.ct3_tabBtn>div:nth-child(1){
+    background-color: #0094E0;
+    color: #fff;
+}
+.ct3_tabBtn>div:nth-child(2){
+    background-color: #fff;
+}
+.ct3_content{
+    padding: 0 8px;
+}
+.ct3_content>ul{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:center;
+}
+.ct3_content>ul>li{
+    min-width: 70px;
+    height: 25px;
+    margin-top: 16px;
+    float: left;
+    padding: 0 5px;
+    border-radius: 10px;
+    border:1px solid #0094E0;
+    color: #0094E0;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.ct3_content>ul>li:nth-child(1){
+    background-color:#0094E0;
+    color: #fff;
+}
+.ct3_save{
+    width: 180px;
+    height: 25px;
+    border-radius: 20px;
+    background-color:#0094E0 ;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+/*左侧表单部分结束*/
+/*右侧表格部分开始*/
+.chart{
+    width: 885px;
+    height: 600px;
+    margin-top: 52px;
+    margin-left: 60px;
+    background-color: #fff;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+}
+.chart canvas{
+    background-color: #DBE3ED;
+    margin: 0 auto;
+}
+.chart_title{
+    color: #525252;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.explain{
+    margin-right: -65%;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+
+}
+.explain>p:nth-child(1){
+    width: 20px;
+    height: 5px;
+    background-color: #F73F3F;
+}
+.explain>p:nth-child(2){
+    width: 20px;
+    height: 5px;
+    background-color: #259e33;
+}
+.explain>p:nth-child(3){
+    width: 20px;
+    height: 5px;
+    background-color: #4ca9ff;
+}
+.chart_bottom{
+    font-size: 16px;
+    font-weight: bold;
+    color: #525252;
+}
+/*右侧表格部分结束*/
+/*内容部分结束*/
+

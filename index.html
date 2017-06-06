@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <!-- 时间选择器CSS-->
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <title>王高益的demo_6月6号</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<!--标题栏-->
+<header>
+    <h2>洪号统计设置</h2>
+</header>
+<!--内容部分-->
+<div class="content-total">
+    <!-- 左侧表单部分 -->
+    <div class="content">
+        <!-- 表单1-->
+        <div class="ct1">
+            <!-- 下拉菜单1-->
+            <div class="dropdown">
+                <span>模型：</span>
+                <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    2005麦莎台风
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">2005麦莎台风1</a></li>
+                    <li><a href="#">2005麦莎台风2</a></li>
+                    <li><a href="#">2005麦莎台风3</a></li>
+                    <li><a href="#">2005麦莎台风4</a></li>
+                </ul>
+            </div>
+
+            <!-- 下拉菜单2-->
+            <div class="dropdown">
+                <span>区域：</span>
+                <button class="btn btn-default dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    2005麦莎台风
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">2005麦莎台风1</a></li>
+                    <li><a href="#">2005麦莎台风2</a></li>
+                    <li><a href="#">2005麦莎台风3</a></li>
+                    <li><a href="#">2005麦莎台风4</a></li>
+                </ul>
+            </div>
+
+            <!-- 下拉菜单3-->
+            <div class="dropdown">
+                <span>洪号：</span>
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    2005麦莎台风
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">2005麦莎台风1</a></li>
+                    <li><a href="#">2005麦莎台风2</a></li>
+                    <li><a href="#">2005麦莎台风3</a></li>
+                    <li><a href="#">2005麦莎台风4</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 表单2-->
+        <div class="ct2">
+            <div>
+                <span>开始时间：</span>
+                <div class="input-group date form_datetime" data-date="2017-01-01T08:00:00Z" data-date-format="yyyy-mm-dd" data-link-field="dtp_input1">
+                    <input class="form-control" size="16" type="text" value="" readonly style="background-color: white;" placeholder="2017-03-05">
+                    <span class="input-group-addon" style=""><span class="glyphicon glyphicon-th" style="margin: 0"></span></span>
+                </div>
+            </div>
+            <div>
+                <span>结束时间：</span>
+                <div class="input-group date form_datetime" data-date="2017-01-01T08:00:00Z" data-date-format="yyyy-mm-dd" data-link-field="dtp_input1">
+                    <input class="form-control" size="16" type="text" value="" readonly style="background-color: white;" placeholder="2017-03-05">
+                    <span class="input-group-addon" style=""><span class="glyphicon glyphicon-th" style="margin: 0"></span></span>
+                </div>
+            </div>
+
+
+            <p>时长： <span>48h</span></p>
+            <p>步长： <span>48h</span></p>
+            <p>说明： <span>降雨集中，土壤湿度大</span></p>
+
+        </div>
+        <!-- 表单3-->
+        <div class="ct3">
+            <!-- tab切换-->
+            <div class="ct3_tabBtn">
+                <div>模型常数tab</div>
+                <div>模拟计算tab</div>
+            </div>
+            <!-- tab内容显示-->
+            <div class="ct3_content">
+                <ul>
+                    <li>初始变量</li>
+                    <li>查询洪水</li>
+                    <li>简报查询</li>
+                    <li>相似洪水</li>
+                    <li>计算</li>
+                    <li>全部洪水计算</li>
+                </ul>
+
+            </div>
+            <!-- 结束保存按钮-->
+            <div class="ct3_save">
+                结束保存
+            </div>
+        </div>
+    </div>
+    <!-- 右侧表格部分-->
+    <div class="chart">
+        <!-- 标题-->
+        <p class="chart_title">洪号场次洪水计算结果图</p>
+        <!-- canvas图-->
+        <canvas id="myChart" width="780" height="420"></canvas>
+        <!-- 图表说明-->
+        <div class="explain">
+
+                <p></p>
+                &nbsp;实时流量&nbsp;
+
+                <p></p>
+                &nbsp;计算流量&nbsp;
+
+                <p></p>
+                &nbsp;降雨&nbsp;
+
+
+        </div>
+        <!-- 说明-->
+        <p class="chart_bottom">洪峰：<span>988</span>立方米每秒&nbsp;&nbsp;峰线时间：<span>1985-01-01</span></p>
+    </div>
+</div>
+</body>
+</html>
+<script src="http://lib.sinaapp.com/js/jquery/3.1.0/jquery-3.1.0.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-3.1.0.min.js"%3E%3C/script%3E'))</script>
+<script src="js/bootstrap.min.js"></script>
+<!--时间选择器JS-->
+<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/index.js"></script>
